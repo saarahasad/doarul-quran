@@ -2,15 +2,18 @@
   text-align: center;
   height: 100%;
   min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-#root{
+img {
+  opacity: 0.1 !important;
+}
+
+#root {
   height: 100%;
   min-height: 100vh;
-
 }
-
-
 
 .App-logo {
   height: 40vmin;
@@ -68,44 +71,45 @@
 
 .font-kitab {
   font-family: "Kitab";
+  font-weight: bolder;
 }
 
 .arabic {
   font-size: 40px;
   line-height: 80px;
   width: 80%;
-  background: white;
   display: inline-block;
   direction: rtl;
   text-align: center;
+  color: white;
 }
 
 .container {
-  margin: 60px;
   padding: 25px;
   text-align: center;
   vertical-align: middle;
-  border: 2px dotted black;
   min-height: 80vh;
 }
 
 .english-text {
   font-size: 25px;
   font-family: "Quicksand", sans-serif;
+  color: white;
+  font-weight: bolder;
 }
 
 .translation {
   font-size: 25px;
   font-family: "Quicksand", sans-serif;
-  
+  color: white;
   text-align: center;
   text-justify: inter-word;
   width: 90%;
   margin: auto;
+  font-weight: bolder;
 }
 
-
-.prev-btn{
+.prev-btn {
   float: left;
   background-color: #000000;
   color: white;
@@ -118,7 +122,7 @@
   cursor: pointer;
 }
 
-.next-btn{
+.next-btn {
   float: right;
   background-color: #000000;
   color: white;
@@ -129,21 +133,35 @@
   font-size: 16px;
   margin: 1px 1px;
   cursor: pointer;
-  
 }
 
-.btn-container{
-width: 80%;  
-align-items: center;
-text-align: center;
-margin: auto;
+.btn-container {
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
-.display-container{
+.display-container {
   margin-top: 70px;
 }
 
-.custom-select{
+.custom-select {
   width: 100px;
   margin: 30px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.alhudalogo{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  position: fixed; 
+  bottom:0%;
 }

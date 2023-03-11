@@ -1,12 +1,33 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import Default from "./img/bd6.jpg";
+import background1 from "./img/bd7.jpg";
+import b2 from "./img/bd7.jpg";
+import b3 from "./img/bd7.jpg";
+import b4 from "./img/bd8.jpg";
+import b5 from "./img/bd9.jpg";
+import b6 from "./img/bd11.jpg";
+import b7 from "./img/bd12.jpg";
+import b8 from "./img/bd14.jpg";
+import alhudalogo from "./img/alhuda.png";
 
 function App() {
   const [page, setPage] = useState("10:1");
   const [data, setData] = useState([]);
-  const [surah, setSurah] = useState(2);
-  const [ayah, setAyah] = useState(282);
+  const [surah, setSurah] = useState(1);
+  const [ayah, setAyah] = useState(1);
+  const [background, setBackground] = useState([
+    Default,
+    b2,
+    b3,
+    b4,
+    b5,
+    b6,
+    b7,
+    b8,
+  ]);
+  const [bindex, setBIndex] = useState(0);
 
   const numberVerses = [
     7, 286, 200, 176, 120, 165, 206, 75, 129, 109, 123, 111, 43, 52, 99, 128,
@@ -36,11 +57,13 @@ function App() {
       setAyah(ayah - 1);
     }
     console.log("You clicked prev", ayah, surah);
+    setBIndex((bindex + 1) % 8);
   }
   function HandleClickNext(e) {
     e.preventDefault();
     console.log("You clicked next.");
     setAyah(ayah + 1);
+    setBIndex((bindex + 1) % 8);
   }
 
   function updateSelectSurah(e) {
@@ -78,32 +101,41 @@ function App() {
   }, [surah, ayah]);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ backgroundImage: `url(${background[bindex]})` }}
+    >
       <div className="container">
-         <div>
-            <select className="custom-select" onChange={(e) => updateSelectSurah(e.target.value)}>
-              {numberSurahs.map((s, index) => {
-                return (
-                  <option key={`year${index}`} value={s}>
-                    {s}
-                  </option>
-                );
-              })}
-            </select>
+        <div>
+          <select
+            className="custom-select"
+            onChange={(e) => updateSelectSurah(e.target.value)}
+          >
+            {numberSurahs.map((s, index) => {
+              return (
+                <option key={`year${index}`} value={s}>
+                  {s}
+                </option>
+              );
+            })}
+          </select>
 
-            <select className="custom-select"  onChange={(e) => updateSelectAyah(e.target.value)}>
-              {Array.from(
-                { length: numberVerses[surah - 1] },
-                (_, i) => i + 1
-              ).map((a, index) => {
-                return (
-                  <option key={`year${index}`} value={a}>
-                    {a}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
+          <select
+            className="custom-select"
+            onChange={(e) => updateSelectAyah(e.target.value)}
+          >
+            {Array.from(
+              { length: numberVerses[surah - 1] },
+              (_, i) => i + 1
+            ).map((a, index) => {
+              return (
+                <option key={`year${index}`} value={a}>
+                  {a}
+                </option>
+              );
+            })}
+          </select>
+        </div>
         <div className="btn-container">
           <button
             variant="outlined"
@@ -112,7 +144,7 @@ function App() {
           >
             Prev
           </button>
-         
+
           <button className="next-btn" onClick={HandleClickNext}>
             Next
           </button>
@@ -147,6 +179,12 @@ function App() {
             </div>
           ))}
         </div>
+          <div className="alhudalogo"
+            style={{
+              backgroundImage: `url(${alhudalogo})`,
+       
+            }}
+          ></div>
       </div>
     </div>
   );
