@@ -10,9 +10,7 @@ import b11 from "./img/bd17.jpg";
 import b13 from "./img/bd19.jpg";
 import b14 from "./img/bd20.jpeg";
 import b15 from "./img/bd21.jpg";
-import b16 from "./img/bd22.jpg";
 import b17 from "./img/bd23.jpg";
-import b18 from "./img/bd24.jpg";
 import b19 from "./img/bd25.jpg";
 import b20 from "./img/bd26.jpg";
 import b21 from "./img/bd27.jpg";
@@ -34,9 +32,7 @@ function App() {
     b13,
     b14,
     b15,
-    b16,
     b17,
-    b18,
     b19,
     b20,
     b21
@@ -71,13 +67,13 @@ function App() {
       setAyah(ayah - 1);
     }
     console.log("You clicked prev", ayah, surah);
-    setBIndex((bindex + 1) % 14);
+    setBIndex((bindex + 1) % 12);
   }
   function HandleClickNext(e) {
     e.preventDefault();
     console.log("You clicked next.");
     setAyah(parseInt(ayah) + 1);
-    setBIndex((bindex + 1) % 14);
+    setBIndex((bindex + 1) % 12);
   }
 
   function updateSelectSurah(e) {
