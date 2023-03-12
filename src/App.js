@@ -1,20 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import Default from "./img/bd6.jpg";
-import background1 from "./img/bd7.jpg";
-import b2 from "./img/bd7.jpg";
-import b3 from "./img/bd7.jpg";
-import b4 from "./img/bd8.jpg";
-import b5 from "./img/bd9.jpg";
-import b6 from "./img/bd11.jpg";
+
+import Default from "./img/bd11.jpg";
 import b7 from "./img/bd12.jpg";
 import b8 from "./img/bd14.jpg";
-import b9 from "./img/bd15.jpg";
 import b10 from "./img/bd16.jpg";
 import b11 from "./img/bd17.jpg";
-import b12 from "./img/bd18.jpg";
 import b13 from "./img/bd19.jpg";
+import b14 from "./img/bd20.jpeg";
+import b15 from "./img/bd21.jpg";
+import b16 from "./img/bd22.jpg";
+import b17 from "./img/bd23.jpg";
+import b18 from "./img/bd24.jpg";
+import b19 from "./img/bd25.jpg";
+import b20 from "./img/bd26.jpg";
 
 import alhudalogo from "./img/alhuda.png";
 
@@ -25,18 +25,19 @@ function App() {
   const [ayah, setAyah] = useState(1);
   const [background, setBackground] = useState([
     Default,
-    b2,
-    b3,
-    b4,
-    b5,
-    b6,
+   
     b7,
     b8,
-    b9,
     b10,
     b11,
-    b12,
-    b13
+    b13,
+    b14,
+    b15,
+    b16,
+    b17,
+    b18,
+    b19,
+    b20
   ]);
   const [bindex, setBIndex] = useState(0);
 
