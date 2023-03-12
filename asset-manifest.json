@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/doarul-quran/static/css/main.66173f54.css",
-    "main.js": "/doarul-quran/static/js/main.90031683.js",
+    "main.js": "/doarul-quran/static/js/main.8f564080.js",
     "static/js/787.f2b8b62f.chunk.js": "/doarul-quran/static/js/787.f2b8b62f.chunk.js",
     "static/media/bd9.jpg": "/doarul-quran/static/media/bd9.1537c765ea99b34fb635.jpg",
     "static/media/bd11.jpg": "/doarul-quran/static/media/bd11.7ae8429172881940a097.jpg",
@@ -14,11 +14,11 @@
     "static/media/logo.svg": "/doarul-quran/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/doarul-quran/index.html",
     "main.66173f54.css.map": "/doarul-quran/static/css/main.66173f54.css.map",
-    "main.90031683.js.map": "/doarul-quran/static/js/main.90031683.js.map",
+    "main.8f564080.js.map": "/doarul-quran/static/js/main.8f564080.js.map",
     "787.f2b8b62f.chunk.js.map": "/doarul-quran/static/js/787.f2b8b62f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66173f54.css",
-    "static/js/main.90031683.js"
+    "static/js/main.8f564080.js"
   ]
 }
