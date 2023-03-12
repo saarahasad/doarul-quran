@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/doarul-quran/static/css/main.16960b12.css",
-    "main.js": "/doarul-quran/static/js/main.5460b0c1.js",
+    "main.css": "/doarul-quran/static/css/main.76220032.css",
+    "main.js": "/doarul-quran/static/js/main.90036e62.js",
     "static/js/787.f2b8b62f.chunk.js": "/doarul-quran/static/js/787.f2b8b62f.chunk.js",
     "static/media/bd16.jpg": "/doarul-quran/static/media/bd16.0e13b785857bb46e8c4f.jpg",
     "static/media/bd27.jpg": "/doarul-quran/static/media/bd27.197bb9d6233301021284.jpg",
+    "static/media/bd29.jpg": "/doarul-quran/static/media/bd29.2dabfc9b40631550758a.jpg",
+    "static/media/bd30.jpg": "/doarul-quran/static/media/bd30.1da143cf6bd027194069.jpg",
     "static/media/bd26.jpg": "/doarul-quran/static/media/bd26.4e09e66734b207364b15.jpg",
     "static/media/bd19.jpg": "/doarul-quran/static/media/bd19.6fc16f630d579725a68b.jpg",
     "static/media/bd17.jpg": "/doarul-quran/static/media/bd17.cc972f3f9bb150853b40.jpg",
@@ -12,17 +14,18 @@
     "static/media/bd25.jpg": "/doarul-quran/static/media/bd25.849b03970ee359efdc35.jpg",
     "static/media/bd12.jpg": "/doarul-quran/static/media/bd12.3aa141e67461df74dc43.jpg",
     "static/media/bd21.jpg": "/doarul-quran/static/media/bd21.e8722441ef04e8f081e8.jpg",
+    "static/media/bd32.jpg": "/doarul-quran/static/media/bd32.ea7180f13357aa11f72e.jpg",
     "static/media/bd14.jpg": "/doarul-quran/static/media/bd14.79c7ea3721d92cc17e9c.jpg",
     "static/media/bd23.jpg": "/doarul-quran/static/media/bd23.4dd8246d81afca45a027.jpg",
     "static/media/alhuda.png": "/doarul-quran/static/media/alhuda.c5c4350dc81d50cc2446.png",
     "static/media/logo.svg": "/doarul-quran/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/doarul-quran/index.html",
-    "main.16960b12.css.map": "/doarul-quran/static/css/main.16960b12.css.map",
-    "main.5460b0c1.js.map": "/doarul-quran/static/js/main.5460b0c1.js.map",
+    "main.76220032.css.map": "/doarul-quran/static/css/main.76220032.css.map",
+    "main.90036e62.js.map": "/doarul-quran/static/js/main.90036e62.js.map",
     "787.f2b8b62f.chunk.js.map": "/doarul-quran/static/js/787.f2b8b62f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16960b12.css",
-    "static/js/main.5460b0c1.js"
+    "static/css/main.76220032.css",
+    "static/js/main.90036e62.js"
   ]
 }
