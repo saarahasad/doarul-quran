@@ -82,6 +82,8 @@ img {
   direction: rtl;
   text-align: center;
   color: white;
+  padding: 10px;
+
 }
 
 .container {
@@ -107,7 +109,11 @@ img {
   width: 90%;
   margin: auto;
   font-weight: bolder;
+  padding: 10px;
+
 }
+
+
 
 .prev-btn {
   float: left;
@@ -144,6 +150,12 @@ img {
 
 .display-container {
   margin-top: 70px;
+
+}
+
+.text-div{
+  background: rgba(0, 0, 0, 0.45);
+
 }
 
 .custom-select {

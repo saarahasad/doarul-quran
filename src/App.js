@@ -13,6 +13,9 @@ import b17 from "./img/bd23.jpg";
 import b19 from "./img/bd25.jpg";
 import b20 from "./img/bd26.jpg";
 import b21 from "./img/bd27.jpg";
+import b23 from "./img/bd29.jpg";
+import b24 from "./img/bd30.jpg";
+import b26 from "./img/bd32.jpg";
 
 import alhudalogo from "./img/alhuda.png";
 
@@ -33,7 +36,7 @@ function App() {
     b17,
     b19,
     b20,
-    b21
+    b21,b23,b24,b26
   ]);
   const [bindex, setBIndex] = useState(0);
 
@@ -65,13 +68,13 @@ function App() {
       setAyah(ayah - 1);
     }
     console.log("You clicked prev", ayah, surah);
-    setBIndex((bindex + 1) % 11);
+    setBIndex((bindex + 1) % 14);
   }
   function HandleClickNext(e) {
     e.preventDefault();
     console.log("You clicked next.");
     setAyah(parseInt(ayah) + 1);
-    setBIndex((bindex + 1) % 11);
+    setBIndex((bindex + 1) % 14);
   }
 
   function updateSelectSurah(e) {
@@ -163,7 +166,7 @@ function App() {
         <div className="display-container">
           {data.map((item, index) => (
             <div>
-              <>
+                            <>
                 {index == 0 ? (
                   <>
                     <p className="english-text">
@@ -174,8 +177,14 @@ function App() {
                     <p className="english-text">
                       {item.surah.number}: {item.numberInSurah}
                     </p>
-                    <p className="font-kitab arabic">{item.text}</p>
                   </>
+                ):""}
+              </> 
+
+              <div className="text-div"> 
+                {index == 0 ? (
+                   
+                    <p className="font-kitab arabic">{item.text}</p>
                 ) : (
                   <>
                     {" "}
@@ -186,7 +195,7 @@ function App() {
                     </div>
                   </>
                 )}
-              </>
+              </div>
             </div>
           ))}
         </div>
