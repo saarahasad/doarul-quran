@@ -62,7 +62,7 @@ function App() {
   function HandleClickNext(e) {
     e.preventDefault();
     console.log("You clicked next.");
-    setAyah(ayah + 1);
+    setAyah(parseInt(ayah) + 1);
     setBIndex((bindex + 1) % 8);
   }
 
@@ -90,9 +90,12 @@ function App() {
       })
       .catch((err) => {
         console.log("Surah ended");
-
-        setSurah(surah + 1);
         setAyah(1);
+        setSurah(parseInt(surah) + 1);
+        if (surah == 115) {
+          setAyah(1);
+          setSurah(1);
+        }
       });
   };
 
@@ -179,12 +182,12 @@ function App() {
             </div>
           ))}
         </div>
-          <div className="alhudalogo"
-            style={{
-              backgroundImage: `url(${alhudalogo})`,
-       
-            }}
-          ></div>
+        <div
+          className="alhudalogo"
+          style={{
+            backgroundImage: `url(${alhudalogo})`,
+          }}
+        ></div>
       </div>
     </div>
   );
