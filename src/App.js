@@ -10,6 +10,12 @@ import b5 from "./img/bd9.jpg";
 import b6 from "./img/bd11.jpg";
 import b7 from "./img/bd12.jpg";
 import b8 from "./img/bd14.jpg";
+import b9 from "./img/bd15.jpg";
+import b10 from "./img/bd16.jpg";
+import b11 from "./img/bd17.jpg";
+import b12 from "./img/bd18.jpg";
+import b13 from "./img/bd19.jpg";
+
 import alhudalogo from "./img/alhuda.png";
 
 function App() {
@@ -26,6 +32,11 @@ function App() {
     b6,
     b7,
     b8,
+    b9,
+    b10,
+    b11,
+    b12,
+    b13
   ]);
   const [bindex, setBIndex] = useState(0);
 
@@ -57,13 +68,13 @@ function App() {
       setAyah(ayah - 1);
     }
     console.log("You clicked prev", ayah, surah);
-    setBIndex((bindex + 1) % 8);
+    setBIndex((bindex + 1) % 13);
   }
   function HandleClickNext(e) {
     e.preventDefault();
     console.log("You clicked next.");
     setAyah(parseInt(ayah) + 1);
-    setBIndex((bindex + 1) % 8);
+    setBIndex((bindex + 1) % 13);
   }
 
   function updateSelectSurah(e) {
