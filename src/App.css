@@ -85,7 +85,8 @@ img {
   text-align: center;
   color: white;
   padding: 10px;
-
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Horizontal, vertical offset, blur radius, and color */
 }
 
 .container {
@@ -96,7 +97,7 @@ img {
 }
 
 .english-text {
-  font-size: 25px;
+  font-size: 15px;
   font-family: "Quicksand", sans-serif;
   color: white;
   font-weight: bolder;
@@ -104,7 +105,7 @@ img {
 
 .translation {
   font-size: 25px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Roboto', sans-serif; /* Example of a legible web font */
   color: white;
   text-align: center;
   text-justify: inter-word;
@@ -112,14 +113,14 @@ img {
   margin: auto;
   font-weight: bolder;
   padding: 10px;
-
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Horizontal, vertical offset, blur radius, and color */
 }
 
 
 
 .prev-btn {
   float: left;
-  background-color: #000000;
+  background: rgba(0, 0, 0, 0.55);
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -128,11 +129,16 @@ img {
   font-size: 16px;
   margin: 1px 1px;
   cursor: pointer;
+  border: none;
+}
+.prev-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+
 }
 
 .next-btn {
   float: right;
-  background-color: #000000;
+  background: rgba(0, 0, 0, 0.55);
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -141,7 +147,14 @@ img {
   font-size: 16px;
   margin: 1px 1px;
   cursor: pointer;
+  border: none;
+
 }
+.next-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+
+}
+
 
 .btn-container {
   width: 80%;
@@ -163,12 +176,14 @@ img {
 .custom-select {
   width: 100px;
   margin: 30px;
-  background-color: #000000;
+  background: rgba(0, 0, 0, 0.75);
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border: none;
+  padding: 5px;
 }
 
 .alhudalogo{
