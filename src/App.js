@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-import Default from "./img/bd11.jpg";
+import Default1 from "./img/bd11.jpg";
 import b7 from "./img/bd12.jpg";
 import b8 from "./img/bd14.jpg";
 import b10 from "./img/bd16.jpg";
@@ -16,6 +18,52 @@ import b21 from "./img/bd27.jpg";
 import b23 from "./img/bd29.jpg";
 import b24 from "./img/bd30.jpg";
 import b26 from "./img/bd32.jpg";
+import n2 from "./img/n1.jpg";
+import Default from "./img/n2.jpg";
+import n3 from "./img/n3.jpg";
+import n4 from "./img/n4.jpg";
+import n5 from "./img/n5.jpeg";
+import n7 from "./img/n7.jpeg";
+import n8 from "./img/n8.jpg";
+import n9 from "./img/n9.jpg";
+import n10 from "./img/n10.jpg";
+import n11 from "./img/n11.jpg";
+import n12 from "./img/n12.jpg";
+import n13 from "./img/n13.jpg";
+import n14 from "./img/n14.jpg";
+import n15 from "./img/n15.jpg";
+import n16 from "./img/n16.jpg";
+import n17 from "./img/n17.jpg";
+import n18 from "./img/n18.jpg";
+import n19 from "./img/n19.jpg";
+import n20 from "./img/n20.jpg";
+import n21 from "./img/n21.jpg";
+import n22 from "./img/n22.jpg";
+import n23 from "./img/n23.jpg";
+import n24 from "./img/n24.jpg";
+import n25 from "./img/n25.jpg";
+import n26 from "./img/n26.jpg";
+import n27 from "./img/n27.jpg";
+import n28 from "./img/n28.jpg";
+import n29 from "./img/n29.jpg";
+import n30 from "./img/n30.jpg";
+import n31 from "./img/n31.jpg";
+import n32 from "./img/n32.jpg";
+import n33 from "./img/n33.jpg";
+import n34 from "./img/n34.jpg";
+import n35 from "./img/n35.jpg";
+import n36 from "./img/n36.jpg";
+import n37 from "./img/n37.jpg";
+import n38 from "./img/n38.jpg";
+import n39 from "./img/n39.jpg";
+import n40 from "./img/n40.jpg";
+import n41 from "./img/n41.jpg";
+import n42 from "./img/n42.jpg";
+import n43 from "./img/n43.jpg";
+import n44 from "./img/n44.jpg";
+import n45 from "./img/n45.jpg";
+import n46 from "./img/n46.jpg";
+import n47 from "./img/n47.jpg";
 
 import alhudalogo from "./img/alhuda.png";
 
@@ -26,18 +74,8 @@ function App() {
   const [ayah, setAyah] = useState(1);
   const [background, setBackground] = useState([
     Default,
-   
-    b7,
-    b8,
-    b10,
-    b11,
-    b13,
-    b15,
-    b17,
-    b19,
-    b20,
-    b21,b23,b24,b26
-  ]);
+    n3, n23, n30, n34, n18, n28, n46, n13, n10, n11, n19, n31, n40, n12, n37, n39, n15, n36, n21, n35, n20, n16, n9, n29, n45, n41, n44, n27, n14, n5, n25, n32, n4, n43, n8, n47, n26, n22, n2, n7, n17, n38, n24, n33, n42
+      ]);
   const [bindex, setBIndex] = useState(0);
 
   const numberVerses = [
@@ -68,13 +106,13 @@ function App() {
       setAyah(ayah - 1);
     }
     console.log("You clicked prev", ayah, surah);
-    setBIndex((bindex + 1) % 14);
+    setBIndex((bindex + 1) % 45);
   }
   function HandleClickNext(e) {
     e.preventDefault();
     console.log("You clicked next.");
     setAyah(parseInt(ayah) + 1);
-    setBIndex((bindex + 1) % 14);
+    setBIndex((bindex + 1) % 45);
   }
 
   function updateSelectSurah(e) {
@@ -156,31 +194,17 @@ function App() {
             className="prev-btn"
             onClick={HandleClickPrev}
           >
-            Prev
+        <FontAwesomeIcon icon={faArrowLeft} /> {/* Left arrow icon */}
           </button>
 
           <button className="next-btn" onClick={HandleClickNext}>
-            Next
+          <FontAwesomeIcon icon={faArrowRight} /> {/* Right arrow icon */}
           </button>
         </div>
         <div className="display-container">
           {data.map((item, index) => (
             <div>
-                            <>
-                {index == 0 ? (
-                  <>
-                    <p className="english-text">
-                      {" "}
-                      Surah {item.surah.englishName}
-                    </p>
-                    <br />
-                    <p className="english-text">
-                      {item.surah.number}: {item.numberInSurah}
-                    </p>
-                  </>
-                ):""}
-              </> 
-
+            
               <div className="text-div"> 
                 {index == 0 ? (
                    
@@ -190,8 +214,12 @@ function App() {
                     {" "}
                     <div>
                       <p className="translation">{item.text} </p>
-                      <br />
-                      <br />
+                      <p className="english-text">
+                      {" "}
+                      Surah {item.surah.englishName} ( {item.surah.number} : {item.numberInSurah} )
+                    </p>    
+                    <br />
+    
                     </div>
                   </>
                 )}
